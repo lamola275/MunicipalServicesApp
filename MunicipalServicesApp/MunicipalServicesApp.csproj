@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <!-- .NET Framework 4.8, as required for a .NET Framework Windows Application -->
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>MunicipalServicesApp</AssemblyName>
+    <RootNamespace>MunicipalServicesApp</RootNamespace>
+    <LangVersion>7.3</LangVersion>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <AssemblyTitle>Municipal Services Application</AssemblyTitle>
+    <Product>Municipal Services Application (South Africa)</Product>
+    <Description>Citizen services application for a South African municipality (PROG7311 PoE Part 2: Local Events and Announcements).</Description>
+  </PropertyGroup>
+
+  <!-- Allows the project to restore/build the .NET Framework 4.8 reference assemblies anywhere
+       (including machines without the 4.8 targeting pack installed). -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
